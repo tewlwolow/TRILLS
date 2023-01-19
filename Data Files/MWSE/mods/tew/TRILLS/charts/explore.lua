@@ -6,6 +6,8 @@ if not CHIMES then return end
 local path = string.sub(debug.getinfo(1).source, 12, -1)
 
 ---------------------------------------------------
+local metadata = require("tew.TRILLS.metadata")
+local topFolder = metadata.topFolder .. "explore"
 
 -- Make your changes here
 local chart = {
@@ -13,7 +15,7 @@ local chart = {
 	data =  {
 		{
 			id = "Explore",
-			folder = "Explore"
+			folder = topFolder
 		}
 	}
 }

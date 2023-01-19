@@ -6,6 +6,8 @@ if not CHIMES then return end
 local path = string.sub(debug.getinfo(1).source, 12, -1)
 
 ---------------------------------------------------
+local metadata = require("tew.TRILLS.metadata")
+local topFolder = metadata.topFolder .. "interiors\\"
 
 -- Make your changes here
 local chart = {
@@ -14,7 +16,7 @@ local chart = {
 	{
 		{
 			id = "Abandoned",
-			folder = "abandoned",
+			folder = topFolder .. "abandoned",
 			method = "tileset",
 			strings = {
 				"in_stronghold",
@@ -32,7 +34,7 @@ local chart = {
 		},
 		{
 			id = "Caves",
-			folder = "caves",
+			folder = topFolder .. "caves",
 			method = "tileset",
 			strings = {
 				"in_moldcave",
@@ -56,7 +58,7 @@ local chart = {
 		},
 		{
 			id = "Daedric",
-			folder = "daedric",
+			folder = topFolder .. "daedric",
 			method = "tileset",
 			strings = {
 				"in_dae_hall",
@@ -67,7 +69,7 @@ local chart = {
 		},
 		{
 			id = "Dwemer",
-			folder = "dwemer",
+			folder = topFolder .. "dwemer",
 			method = "tileset",
 			strings = {
 				"in_dwrv_hall",
@@ -79,7 +81,7 @@ local chart = {
 		},
 		{
 			id = "Temples",
-			folder = "temples",
+			folder = topFolder .. "temples",
 			method = "names",
 			strings = {
 				"Temple",
@@ -92,7 +94,7 @@ local chart = {
 		},
 		{
 			id = "Tombs",
-			folder = "tombs",
+			folder = topFolder .. "tombs",
 			method = "names",
 			strings = {
 				"Tomb",

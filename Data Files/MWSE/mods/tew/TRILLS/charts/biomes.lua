@@ -6,6 +6,8 @@ if not CHIMES then return end
 local path = string.sub(debug.getinfo(1).source, 12, -1)
 
 ---------------------------------------------------
+local metadata = require("tew.TRILLS.metadata")
+local topFolder = metadata.topFolder .. "biomes\\"
 
 local chart = {
 	name = "TRILLS:Biomes",
@@ -13,7 +15,7 @@ local chart = {
 	{
 		{
 			id = "Lush",
-			folder = "lush",
+			folder = topFolder .. "lush",
 			strings = {
 				"Aanthirin Region",
 				"Abecean Sea Region",
@@ -45,7 +47,7 @@ local chart = {
 		},
 		{
 			id = "Ashy",
-			folder = "ashy",
+			folder = topFolder .. "ashy",
 			strings = {
 				"Armun Ashlands Region",
 				"Ashlands Region",
@@ -54,7 +56,7 @@ local chart = {
 		},
 		{
 			id = "Barren",
-			folder = "barren",
+			folder = topFolder .. "barren",
 			strings = {
 				"Boethiah's Spine Region",
 				"Colovian Barrowlands Region",
@@ -89,7 +91,7 @@ local chart = {
 		},
 		{
 			id = "Snowy",
-			folder = "snowy",
+			folder = topFolder .. "snowy",
 			strings = {
 				"Broken Cape Region",
 				"Drajkmyr Marsh Region",
@@ -120,7 +122,7 @@ local chart = {
 		},
 		{
 			id = "Volcanic",
-			folder = "volcanic",
+			folder = topFolder .. "volcanic",
 			strings = {
 				"Red Mountain Region",
 				"Firemoth Region"

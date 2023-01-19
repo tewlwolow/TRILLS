@@ -6,6 +6,8 @@ if not CHIMES then return end
 local path = string.sub(debug.getinfo(1).source, 12, -1)
 
 ---------------------------------------------------
+local metadata = require("tew.TRILLS.metadata")
+local topFolder = metadata.topFolder .. "exteriors\\"
 
 -- Make your changes here
 local chart = {
@@ -14,7 +16,7 @@ local chart = {
 	{
 		{
 			id = "Hlaalu",
-			folder = "hlaalu",
+			folder = topFolder .. "hlaalu",
 			method = "tileset",
 			strings = {
 				"ex_hlaalu_",
@@ -23,7 +25,7 @@ local chart = {
 		},
 		{
 			id = "Redoran",
-			folder = "redoran",
+			folder = topFolder .. "redoran",
 			method = "tileset",
 			strings = {
 				"ex_redoran_"
@@ -31,7 +33,7 @@ local chart = {
 		},
 		{
 			id = "Vivec",
-			folder = "vivec",
+			folder = topFolder .. "vivec",
 			method = "tileset",
 			strings = {
 				"ex_vivec",
@@ -40,7 +42,7 @@ local chart = {
 		},
 		{
 			id = "Telvanni",
-			folder = "telvanni",
+			folder = topFolder .. "telvanni",
 			method = "tileset",
 			strings = {
 				"ex_t_"
@@ -48,7 +50,7 @@ local chart = {
 		},
 		{
 			id = "Imperial",
-			folder = "imperial",
+			folder = topFolder .. "imperial",
 			method = "tileset",
 			strings = {
 				"ex_common_",
@@ -57,7 +59,7 @@ local chart = {
 		},
 		{
 			id = "Nord",
-			folder = "nord",
+			folder = topFolder .. "nord",
 			method = "tileset",
 			strings = {
 				"ex_nord_",
@@ -67,7 +69,7 @@ local chart = {
 		},
 		{
 			id = "Towns",
-			folder = "towns",
+			folder = topFolder .. "towns",
 			method = "tileset",
 			strings = {
 				"ex_de_shack"
@@ -75,7 +77,7 @@ local chart = {
 		},
 		{
 			id = "Ashlander",
-			folder = "ashlander",
+			folder = topFolder .. "ashlander",
 			method = "tileset",
 			strings = {
 				"ex_ashl_"

@@ -6,6 +6,8 @@ if not CHIMES then return end
 local path = string.sub(debug.getinfo(1).source, 12, -1)
 
 ---------------------------------------------------
+local metadata = require("tew.TRILLS.metadata")
+local topFolder = metadata.topFolder .. "weathers\\"
 
 local chart = {
 	name = "TRILLS:Weathers",
@@ -29,15 +31,15 @@ local chart = {
 		},
 		{
 			id = "Rain",
-			folder = "rain"
+			folder = topFolder .. "rain"
 		},
 		{
 			id = "Snow",
-			folder = "snow"
+			folder = topFolder .. "snow"
 		},
 		{
 			id = "Foggy",
-			folder = "foggy"
+			folder = topFolder .. "foggy"
 		}
 	}
 }
