@@ -34,4 +34,4 @@ local function init()
 end
 
 
-event.register(tes3.event.initalized, init)
+event.register(tes3.event.initialized, init)
