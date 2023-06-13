@@ -24,7 +24,7 @@ local metadata = require("tew.TRILLS.metadata")
 local version = metadata.version
 
 local function init()
-    mwse.log("[CHIMES] Version "..version.." initialised.")
+    mwse.log("[TRILLS] Version "..version.." initialised.")
     dofile("Data Files\\MWSE\\mods\\tew\\TRILLS\\charts\\biomes.lua")
     dofile("Data Files\\MWSE\\mods\\tew\\TRILLS\\charts\\explore.lua")
     dofile("Data Files\\MWSE\\mods\\tew\\TRILLS\\charts\\exteriors.lua")
@@ -34,4 +34,4 @@ local function init()
 end
 
 
-event.register("initialized", init)
+event.register(tes3.event.initalized, init)
