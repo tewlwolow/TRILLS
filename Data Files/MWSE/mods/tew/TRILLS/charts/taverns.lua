@@ -12,7 +12,7 @@ local topFolder = metadata.topFolder .. "taverns\\"
 -- Make your changes here
 local chart = {
 	name = "TRILLS:Taverns",
-	useRaces = false,
+	useRaces = true,
 	data =
 	{
 		{
