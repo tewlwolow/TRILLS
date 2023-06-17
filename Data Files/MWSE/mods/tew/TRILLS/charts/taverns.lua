@@ -26,6 +26,10 @@ local chart = {
 		{
 			id = "Nord",
 			folder = topFolder .. "nord"
+		},
+		{
+			id = "fallback",
+			folder = topFolder .. "dark elf"
 		}
 	}
 }

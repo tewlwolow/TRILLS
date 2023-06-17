@@ -27,7 +27,7 @@ local chart = {
 		},
 		{
 			id = "Thunderstorm",
-			disable = false,
+			disable = true,
 		},
 		{
 			id = "Rain",
