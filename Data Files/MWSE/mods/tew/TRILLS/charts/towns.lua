@@ -6,8 +6,8 @@ if not CHIMES then return end
 local path = string.sub(debug.getinfo(1).source, 12, -1)
 
 ---------------------------------------------------
-local metadata = require("tew.TRILLS.metadata")
-local topFolder = metadata.topFolder .. "towns\\"
+local metadata = toml.loadMetadata("TRILLS")
+local topFolder = metadata.paths.topFolder  .. "towns\\"
 
 -- Make your changes here
 local chart = {

@@ -1,0 +1,26 @@
+[package]
+name = "TRILLS"
+description = "A chart and music pack for CHIMES."
+authors = ["tewlwolow"]
+version = "0.0.1"
+homepage = "https://www.nexusmods.com/morrowind/mods/"
+repository = "https://github.com/tewlwolow/TRILLS"
+
+
+[tools.mwse]
+lua-mod = "tew.TRILLS"
+wait-until-initialize = false
+
+[dependencies.mwse]
+buildnumber = 3212
+
+[dependencies.mge-xe]
+version = ">=0.15.0"
+
+[dependencies.mods."CHIMES"]
+mwse-module = "tew.CHIMES"
+version = ">=0.0.1"
+url = "https://www.nexusmods.com/morrowind/mods/"
+
+[paths]
+topFolder = "tew\\TRILLS\\"
